@@ -35,4 +35,4 @@ Each day's folder contains a JavaScript file with the solution, along with any n
 1. Clone this repository to your local machine:
 
    ```bash
-   git clone https://github.com/your-username/leetcode-30-days-javascript.git
+   git clone https://github.com/shakhbozbekusmonov/30-Days-of-JavaScript.git
