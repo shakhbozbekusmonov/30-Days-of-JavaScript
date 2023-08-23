@@ -25,6 +25,9 @@ Here are the solutions to each day's challenge:
 
 - [Day 1: Problem Title](Day1/)
 - [Day 2: Problem Title](Day2/)
+- [Day 3: Problem Title](Day3/)
+- [Day 4: Problem Title](Day4/)
+- [Day 5: Problem Title](Day5/)
 - ...
 - [Day 30: Problem Title](Day30/)
 
