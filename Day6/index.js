@@ -122,3 +122,39 @@ TimeLimitedCache.prototype.count = function () {
  */
 
 //----------------------------------------------------------------
+
+/**
+ * @param {Object | Array} obj
+ * @return {boolean}
+ */
+var isEmpty = function (obj) {
+    return Object.keys(obj).length === 0 ? true : false;
+};
+
+// ----------------------------------------------------------------
+
+Array.prototype.last = function () {
+    return this.length > 0 ? this[this.length - 1] : -1;
+};
+
+/**
+ * const arr = [1, 2, 3];
+ * arr.last(); // 3
+ */
+
+// ----------------------------------------------------------------
+
+/**
+ * @param {Array} arr
+ * @param {number} size
+ * @return {Array[]}
+ */
+var chunk = function (arr, size) {
+    let newArr = [];
+    for (let i = 0; i < arr.length; i += size) {
+        newArr.push(arr.slice(i, i + size));
+    }
+    return newArr;
+};
+
+// -------------------- 
