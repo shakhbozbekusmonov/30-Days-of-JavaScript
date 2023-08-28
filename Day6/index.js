@@ -157,4 +157,29 @@ var chunk = function (arr, size) {
     return newArr;
 };
 
-// -------------------- 
+// --------------------------------------------
+
+/**
+ * @param {number} n
+ * @param {number} k
+ * @return {number[][]}
+ */
+var combine = function (n, k) {
+    let res = [];
+    const backtrack = (combo, start) => {
+        if (combo.length === k) {
+            res.push([...combo]);
+            return;
+        }
+
+        for (let i = start; i <= n - k + combo.length + 1; i++) {
+            combo.push(i);
+            backtrack(combo, i + 1);
+            combo.pop();
+        }
+    };
+    backtrack([], 1);
+    return res;
+};
+
+// -------------- END --------------------
