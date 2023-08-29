@@ -51,3 +51,24 @@ var promiseAll = async function (functions) {
  */
 
 //----------------------------------------------------------------
+
+/**
+ * @param {Function} fn
+ * @return {Array}
+ */
+Array.prototype.groupBy = function (fn) {
+    return this.reduce((result, item) => {
+        const groupKey = fn(item);
+        if (!result[groupKey]) {
+            result[groupKey] = [];
+        }
+        result[groupKey].push(item);
+        return result;
+    }, {});
+};
+
+/**
+ * [1,2,3].groupBy(String) // {"1":[1],"2":[2],"3":[3]}
+ */
+
+//-------------------------------------------------------------
