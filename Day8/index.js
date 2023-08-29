@@ -119,7 +119,7 @@ ArrayWrapper.prototype.valueOf = function () {
 };
 
 ArrayWrapper.prototype.toString = function () {
-    return `[${this.nums}]`;
+    return JSON.stringify(this.nums);
 };
 
 /**
@@ -129,3 +129,5 @@ ArrayWrapper.prototype.toString = function () {
  * String(obj1); // "[1,2]"
  * String(obj2); // "[3,4]"
  */
+
+//----------------------------------------------------------------
