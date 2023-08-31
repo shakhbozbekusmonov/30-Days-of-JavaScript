@@ -28,6 +28,10 @@ Here are the solutions to each day's challenge:
 - [Day 3: Problem Title](Day3/)
 - [Day 4: Problem Title](Day4/)
 - [Day 5: Problem Title](Day5/)
+- [Day 6: Problem Title](Day6/)
+- [Day 7: Problem Title](Day7/)
+- [Day 8: Problem Title](Day8/)
+- [Day 9: Problem Title](Day9/)
 - ...
 - [Day 30: Problem Title](Day30/)
 
